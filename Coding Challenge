@@ -1,0 +1,31 @@
+Fruit Coding Challenge
+
+            ======================================================
+            =               Survey Tool Prompt                   =
+            ======================================================
+
+Write a command-line survey application. It should meet the following requirements:
+    1) Reads questions and answer choices from a JSON or plist file (samples input file and sample prompt outputs provided: sample_survey.json, sample_cli_prompts.txt).
+    2) Presents multiple choice or free-form questions to the user and stores their responses.
+    3) Writes user responses into a responses.json file. This file should accumulate responses as more people take the survey, and it should track who gave each response.
+    4) Should account for follow-up questions on certain multiple-choice responses (ie, if they choose a particular answer it might present a follow-up question).
+
+Please also note that you do not need to conform to the format of the sample input/output files. Please choose the format that you think will work best.
+
+Bonus:
+    1) Include an extra script that aggregates responses and generates some type of report.
+    2) Add support for N-deep nested follow-up questions (standard prompt only requires 1-level of follow-up questions).
+    *3) Add an option for configuring questions such that more than 1 choice can be picked by the user.
+    4) Store responses in an SQL database instead of JSON file.
+    5) Big bonus points: make this into a web application.
+
+Notes about the sample input files:
+    - Each question is represented as a dictionary with a 'question' key, and optionally a 'choices' key.
+    - The 'choices' key on each question corresponds to a list of choice dictionaries. If the choices list is empty or missing you can assume it is a free-form response.
+    - Some choices will have follow-up questions as nested question dicts. If the follow-ups list is empty or missing you can assume there are no follow-up questions.
+
+QUESTIONS:
+What does the responses.json file look like? Just by name, and then a list of responses to questions?
+
+PLANNED EXTENSIONS:
+';' seperated choices -- response.split(';')

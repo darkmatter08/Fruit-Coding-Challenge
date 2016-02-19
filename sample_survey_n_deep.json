@@ -1,0 +1,73 @@
+[
+    {
+        "_comment": "Validated JSON with http://jsonlint.com/",
+        "question": "What is your favorite food?"
+    }, 
+    {
+        "question": "What kind of computer do you use?", 
+        "choices": [
+            {
+                "choice": "Mac", 
+                "follow-ups": [
+                    {
+                        "question": "What type of Mac do you own?", 
+                        "choices": [
+                            {
+                                "choice": "Notebook",
+                                "follow-ups": [
+                                    {
+                                        "question": "Model?",
+                                        "choices": [
+                                            {
+                                                "choice": "MacBook Air", 
+                                                "follow-ups": [
+                                                    {
+                                                        "question": "Year?"
+                                                    },
+                                                    {
+                                                        "question": "Screen Size?"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "choice": "MacBook Pro"
+                                            },
+                                            {
+                                                "choice": "Other", 
+                                                "follow-ups": [
+                                                    {
+                                                        "question": "Other -- please describe."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "question": "Why not a desktop?"
+                                    }
+                                ]
+                            }, 
+                            {
+                                "choice": "Desktop"
+                            }
+                        ]
+                    },
+                    {
+                        "question": "Why not Windows?"
+                    }
+                ]
+            }, 
+            {
+                "choice": "Windows"
+            }, 
+            {
+                "choice": "Other", 
+                "follow-ups": [
+                    {
+                        "question": "Other -- please describe."
+                    }
+                ]
+            }
+        ]
+    }
+]

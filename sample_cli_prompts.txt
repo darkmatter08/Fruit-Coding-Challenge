@@ -1,0 +1,58 @@
+#################################################################################
+# Two sample prompts with different question/response tracks are provided below #
+#################################################################################
+
+
+$ python main.py sample_survey.json
+Please enter your full name (first and last): Jane Doe
+
+What is your favorite food?
+>> Hamburger
+
+What is your favorite color?
+1) Red
+2) Orange
+3) Yellow
+4) Green
+5) Blue
+6) Purple
+>> 1
+
+What kind of computer do you use?
+1) Mac
+2) Windows
+3) Other
+>> 3
+
+Other -- please describe.
+>> Linux
+
+
+#################################################################################
+
+
+$ python main.py sample_survey.json
+Please enter your full name (first and last): John Doe
+
+What is your favorite food?
+>> Pizza
+
+What is your favorite color?
+1) Red
+2) Orange
+3) Yellow
+4) Green
+5) Blue
+6) Purple
+>> 4
+
+What kind of computer do you use?
+1) Mac
+2) Windows
+3) Other
+>> 1
+
+What type of Mac do you own?
+1) Notebook
+2) Desktop
+>> 1
